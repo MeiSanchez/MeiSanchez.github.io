@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <link rel="stylesheet" href="external_registration.css">
+</head>
+<body>
+    <h2>Employee Registration Form</h2>
+    <form>
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname" required>
+
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="firstname" required>
+
+        <label for="middlename">Middle Name</label>
+        <input type="text" id="middlename" name="middlename">
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <label for="contact">Contact Number</label>
+        <input type="tel" id="contact" name="contact" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="civil status">Civil Status</label>
+        <select id="civil status" name="civil status" required>
+            <option value="single">Single</option>
+            <option value="in a relationship">In A Relationship</option>
+            <option value="married">Married</option>
+            <option value="divorced">Divorced</option>
+            <option value="widowed">Widowed</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="religion">Religion</label>
+        <input type="text" id="religion" name="religion" required>
+
+        <label for="citizenship">Citizenship</label>
+        <input type="text" id="citizenship" name="citizenship" required>
+
+        <label for="father's name">Father's name</label>
+        <input type="text" id="father's name" name="father's name" required>
+
+        <label for="father's occupation">Father's Occupation</label>
+        <input type="text" id="father's occupation" name="father's occupation" required>
+
+        <label for="mother's name">Mother's Name</label>
+        <input type="text" id="mother's name" name="mother's name" required>
+
+        <label for="mother's occupation">Mother's Occupation</label>
+        <input type="text" id="mother's occupation" name="mother's occupation" required>
+
+        <label for="education">Education</label>
+        <textarea type="text" id="education" name="education" rows="4" required></textarea>
+
+        <label for="experience">Work Experience</label>
+        <textarea id="experience" name="experience" rows="4" required></textarea>
+
+        <label for="skills">Skills</label>
+        <textarea id="skills" name="skills" rows="4" required></textarea>
+
+        <div class="button-group">
+            <button type="submit">Register</button>
+            <button type="reset">Cancel</button>
+        </div>
+    </form>
+</body>
+</html>
