@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="external_registration.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Employee Registration Form</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" class="form-control" id="lastname" name="lastname" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="firstname">First Name</label>
+                    <input type="text" class="form-control" id="firstname" name="firstname" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="middlename">Middle Name</label>
+                    <input type="text" class="form-control" id="middlename" name="middlename">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" class="form-control" id="dob" name="dob" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="gender">Gender</label>
+                    <select class="form-control" id="gender" name="gender" required>
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="civil_status">Civil Status</label>
+                    <select class="form-control" id="civil_status" name="civil_status" required>
+                        <option value="">Select</option>
+                        <option value="single">Single</option>
+                        <option value="in_a_relationship">In A Relationship</option>
+                        <option value="married">Married</option>
+                        <option value="divorced">Divorced</option>
+                        <option value="widowed">Widowed</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="contact">Contact Number</label>
+                    <input type="tel" class="form-control" id="contact" name="contact" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="religion">Religion</label>
+                    <input type="text" class="form-control" id="religion" name="religion" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="citizenship">Citizenship</label>
+                    <input type="text" class="form-control" id="citizenship" name="citizenship" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="fathersname">Father's Name</label>
+                    <input type="text" class="form-control" id="fathersname" name="fathersname" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="fathersoccupation">Father's Occupation</label>
+                    <input type="text" class="form-control" id="fathersoccupation" name="fathersoccupation" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="mothersname">Mother's Name</label>
+                    <input type="text" class="form-control" id="mothersname" name="mothersname" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="mothersoccupation">Mother's Occupation</label>
+                    <input type="text" class="form-control" id="mothersoccupation" name="mothersoccupation" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="education">Education</label>
+                <textarea class="form-control" id="education" name="education" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Work Experience</label>
+                <textarea class="form-control" id="experience" name="experience" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="skills">Skills</label>
+                <textarea class="form-control" id="skills" name="skills" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-success">Register</button>
+                <button type="reset" class="btn btn-danger">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
