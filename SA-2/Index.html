@@ -3,40 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
+    <title>One-Page Resume</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <header class="profile-header">
-            <div class="profile-image"></div>
-            <div class="profile-details">
-                <h1>Profile Name</h1>
-                <p>245 Blackfriars Road<br>Ludgate House<br>London, SE1 9UY</p>
-                <p>Email: <a href="mailto:firstname@surname.com">firstname@surname.com</a></p>
-                <p>Telephone: 0207 955 3705</p>
+        <div class="header">
+            <div class="profile-image">
+                <img src="profile.jpg" alt="Profile Image">
+            </div>
+            <div class="profile-info">
+                <h1>Juliana Mei Sanchez</h1>
+                <p>145 Balaongan Street<br>Brgy. Pantoc<br>Meycauayan City, Bulacan, Philippines</p>
+                <p>Email: <a href="mailto:julianamei.sanchezict@gmail.com">julianamei.sanchezict@gmail.com</a></p>
+                <p>Cellphone: 09569141678</p>
             </div>
             <div class="categories">
                 <h2>Categories</h2>
-                <p>Lorem ipsum<br>dolor sit<br>amet</p>
+                <p>Lorem ipsum<br>dolor sit<br>amet<br>dolor sit</p>
             </div>
-        </header>
-        <section class="profile-content">
+        </div>
+        <div class="content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur nibh feugiat urna elementum facilisis. Nullam diam arcu, lobortis ut tincidunt vel, suscipit quis lectus. Praesent interdum sapien in nisi tempor vestibulum. Mauris nec mauris sapien. Nam laoreet nisi non magna iaculis vitae convallis lorem porttitor.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur nibh feugiat urna elementum facilisis. Nullam diam arcu, lobortis ut tincidunt vel, suscipit quis lectus. Praesent interdum sapien in nisi tempor vestibulum. Mauris nec mauris sapien.</p>
-        </section>
-        <footer class="profile-footer">
-            <div class="media-section">
-                <div class="video"></div>
-                <div class="gallery">
-                    <div class="gallery-item"></div>
-                    <div class="gallery-item"></div>
-                    <div class="gallery-item"></div>
-                    <div class="gallery-item"></div>
-                </div>
+        </div>
+        <div class="attachments">
+            <div class="video">
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
-            <div class="attachments">
-                <h2>Attachments</h2>
+            <div class="gallery">
+                <img src="image1.jpg" alt="Image 1">
+                <img src="image2.jpg" alt="Image 2">
+                <img src="image3.jpg" alt="Image 3">
+                <img src="image4.jpg" alt="Image 4">
+            </div>
+            <div class="links">
                 <ul>
                     <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
                     <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
@@ -44,7 +48,7 @@
                     <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
                 </ul>
             </div>
-        </footer>
+        </div>
     </div>
 </body>
 </html>
