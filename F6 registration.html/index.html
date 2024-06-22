@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+    <script type="text/javascript">
+        function validateForm() {
+            var username = document.forms["registrationForm"]["username"].value;
+            var email = document.forms["registrationForm"]["email"].value;
+            var password = document.forms["registrationForm"]["password"].value;
+            var confirmPassword = document.forms["registrationForm"]["confirmPassword"].value;
+            
+            if (username==""|| email=="" || password=="" || confirmPassword=="") {
+                alert("All fields must be filled out.");
+                return false;
+            }
+
+            if (password!== confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+
+            window.location.href = "login.html";
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form name="registrationForm" onsubmit="return validateForm()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="text" id="confirmPassword" name="confirmPassword"><br><br>
+
+        <input type="submit" value="Submit Me">
+    </form>
+</body>
+</html>
