@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #006400;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAAAAAAAD/4QBmRXhpZgAASUkqAAgAAAABADEBAAMAAAABAAEAAAEAAAABAAEAAAEBBAABAAAACgkAAGmHBAABAAAACgkAAAEyAAIAAAAUAAAAVGhpcyBpcyBhbiBleGFtcGxlIGltYWdlIHVzaW5nIGJhc2U2NCBlbmNvZGluZy4='); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    .form-control {
+      border-radius: 5px;
+    }
+    .btn {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .school-logo {
+      width: 100px;
+      margin-bottom: 1rem;
+    }
+    .footer {
+      margin-top: 1.5rem;
+    }
+    .footer a {
+      color: #fff;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+    .footer p {
+      margin: 0.5rem 0;
+    }
+    .footer .instructure {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    .ms-logo {
+      width: 20px;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d7/Far_Easter_University_Logo.svg/1200px-Far_Easter_University_Logo.svg.png" alt="School Logo" class="school-logo">
+    <h2>Far Eastern University</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" placeholder="Enter username">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter password">
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="staySignedIn">
+        <label class="form-check-label" for="staySignedIn">Stay signed in</label>
+      </div>
+      <button type="button" class="btn btn-primary mt-3" onclick="validateForm()">Log In</button>
+      <div class="form-group mt-3">
+        <a href="#" class="text-white">Forgot Password?</a>
+      </div>
+      <div class="form-group mt-3">
+        <a href="#" class="text-white">Browse courses</a>
+      </div>
+      <button type="button" class="btn btn-secondary mt-3" onclick="loginWithMicrosoft()">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo" class="ms-logo"> Login with Microsoft
+      </button>
+    </form>
+    <div class="footer">
+      <a href="#">Help</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Acceptable Use Policy</a>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <p class="instructure">INSTRUCTURE</p>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+    function validateForm() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      
+      if (!username || !password) {
+        alert('Both fields are required!');
+      } else {
+        alert('Form submitted successfully!');
+      }
+    }
+    
+    function loginWithMicrosoft() {
+      // Add the logic to handle Microsoft login
+      alert('Login with Microsoft clicked');
+    }
+  </script>
+</body>
+</html>
